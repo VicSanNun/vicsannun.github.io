@@ -2,24 +2,32 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: An astrophysicist passionate about the financial market
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Quant. Developer @ XP Inc</p>
+    <p>BSc. Astrophysics</p>
 
-news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+news: false # includes a list of news items
+selected_papers: false # includes a list of papers marked as "selected={true}"
+social: false # includes social icons at the bottom of the page
 ---
+Apaixonado por artes, eletrônica, computação, física, matemática, estatística, finanças, filosofia entre tantas outra coisas, acredito que minha gama diversa de interesses e ampla formação e experiência me forneceram uma capacidade ímpar de enxergar o mundo e resolver problemas.
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Tenho um histórico profissional multidisciplinar cobrindo as áreas de desenvolvimento de software, análise e ciência de dados e finanças quantitativas. Além disso, na universidade, trabalhei em projetos de matemática pura, física matemática e teórica e machine learning aplicado a Cosmologia.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Além das áreas citadas acima sou apaixonado por música e toco violão instrumental.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Alguns outros interesses:
+* Fundamentos de Computação e Arquitetura de Computadores
+* Métodos Numéricos e Física Computacional
+* Programação Funcional e de Baixo Nível (ênfase em C++)
+* Code Design e Arquitetura de Software
+* Eletrônica Analógica (com foco em áudio)
+* Geometria Diferencial e Relatividade
+* Modelagem Determinística e Estocástica
+
