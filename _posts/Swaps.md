@@ -1,0 +1,3 @@
+[[SOFR]]
+[[LIBOR]]
+[[EURIBOR]]
