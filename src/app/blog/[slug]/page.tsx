@@ -1,7 +1,7 @@
 import { getPostBySlug, getAllPosts } from '@/lib/markdown'
 import { notFound } from 'next/navigation'
 
-interface BlogPostProps {
+interface Props {
   params: {
     slug: string
   }
@@ -14,9 +14,15 @@ export async function generateStaticParams() {
   }))
 }
 
-export default async function BlogPost({ params }: BlogPostProps) {
+export default async function BlogPost({ params }: {params: Promise<{slug: string}>}) {
+  const { slug } = await params
+  if (!slug) {
+    return notFound()
+  }
+
   try {
-    const post = await getPostBySlug(params.slug)
+    const { slug } = await params
+    const post = await getPostBySlug(slug)
 
     return (
       <div className="bg-gray-50 min-h-screen py-8">
@@ -40,6 +46,6 @@ export default async function BlogPost({ params }: BlogPostProps) {
       </div>
     )
   } catch (error) {
-    notFound()
+    return notFound()
   }
 } 
