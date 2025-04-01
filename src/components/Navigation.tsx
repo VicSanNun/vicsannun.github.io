@@ -20,7 +20,7 @@ const Navigation = () => {
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
             <Link href="/" className="text-xl font-bold text-gray-800">
-              My Blog
+              Victor Nunes
             </Link>
           </div>
           <div className="hidden md:block">

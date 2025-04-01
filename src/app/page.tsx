@@ -5,10 +5,10 @@ export default function Home() {
     <div className="space-y-12">
       <section className="text-center space-y-4">
         <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">
-          Welcome to My Blog
+          Welcome to My Garden
         </h1>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-          I&apos;m a passionate developer sharing my thoughts, projects, and experiences
+          I&apos;m a passionate engineer sharing my thoughts, projects, and experiences
           through this blog.
         </p>
         <div className="flex justify-center gap-4">
