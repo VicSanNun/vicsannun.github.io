@@ -32,20 +32,20 @@ export default function Resume() {
               <h4 className="font-semibold text-gray-900">Quantitative Developer</h4>
               <p className="text-gray-600">XP Inc • 2024 - Present</p>
               <ul className="list-disc list-inside text-gray-600 mt-2">
-                <li>Developing and maintaining position reconciliations, with a special focus on offshore derivatives trading, ensuring the consistency of financial positions in the range of USD billions.</li>
-                <li>Developing and maintaining deal capture systems (ticketing systems) for offshore OTC derivatives trades, processing dozens of trades daily with values in the range of tens of millions of USD.</li>
-                <li>Developing comprehensive training materials on derivatives and bonds while mentoring junior developers, enhancing their expertise and fostering a culture of continuous growth and excellence within the team.</li>
+                <li>Developing and maintaining position reconciliations, with a special focus on offshore derivatives trading, <strong>ensuring the consistency of financial positions in the range of USD billions.</strong></li>
+                <li>Developing and maintaining deal capture systems (ticketing systems) for offshore OTC derivatives trades, <strong>processing dozens of trades daily with values in the range of tens of millions of USD.</strong></li>
+                <li>Developing comprehensive training materials on derivatives and bonds while mentoring junior developers, <strong>enhancing their expertise and fostering a culture of continuous growth and excellence within the team.</strong></li>
               </ul>
             </div>
             <div>
               <h4 className="font-semibold text-gray-900">Business Analyst</h4>
               <p className="text-gray-600">XP Inc • 2021 - 2024</p>
               <ul className="list-disc list-inside text-gray-600 mt-2">
-                <li>I led the development of a tool to automate performance fee revenue calculations (values reaching tens of millions of BRL), providing crucial data for strategic decision-making.</li>
-                <li>By analyzing the income statement and product data, we identified the cause of its negative EBITDA. We then modeled the product and simulated scenarios, leading to a projected 70% reduction in losses.
+                <li>I led the development of a tool to automate performance fee revenue calculations (<strong>values reaching tens of millions of BRL</strong>), providing crucial data for strategic decision-making.</li>
+                <li>By analyzing the income statement and product data, we identified the cause of its negative EBITDA. We then modeled the product and simulated scenarios, <strong>reducing 70% of our losses.</strong>
                 </li>
-                <li>I developed a trade matching tool that, during testing, helped raise BRL 6 million and now
-                assists the trading desk in capturing millions monthly.</li>
+                <li>I developed a trade matching tool that, during testing, <strong>helped raise BRL 6 million and now
+                assists the trading desk in capturing millions monthly.</strong></li>
               </ul>
             </div>
           </div>
@@ -86,9 +86,14 @@ export default function Resume() {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {[
               'Python',
+              'C#',
+              'C++',
+              'GoLang',
               'SQL',
               'Git',
               'Docker',
+              'RabbitMQ',
+              'LangGraph',
               'CI/CD',
               'REST APIs',
               'gRPC',
