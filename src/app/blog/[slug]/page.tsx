@@ -1,12 +1,6 @@
 import { getPostBySlug, getAllPosts } from '@/lib/markdown'
 import { notFound } from 'next/navigation'
 
-interface Props {
-  params: {
-    slug: string
-  }
-}
-
 export async function generateStaticParams() {
   const posts = await getAllPosts()
   return posts.map((post) => ({
@@ -46,6 +40,7 @@ export default async function BlogPost({ params }: {params: Promise<{slug: strin
       </div>
     )
   } catch (error) {
+    console.error(error)
     return notFound()
   }
 } 

@@ -5,13 +5,13 @@ export default function About() {
       
       <div className="prose prose-lg">
         <p className="text-gray-600 mb-6">
-          Hello! I'm a passionate developer who loves creating amazing things with code.
+          Hello! I&apos;m a passionate developer who loves creating amazing things with code.
           I believe in writing clean, maintainable code and sharing knowledge with others.
         </p>
 
         <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">My Journey</h2>
         <p className="text-gray-600 mb-6">
-          I started my programming journey [Your story here]. Over the years, I've worked
+          I started my programming journey [Your story here]. Over the years, I&apos;ve worked
           on various projects and technologies, always striving to learn and improve.
         </p>
 
@@ -39,13 +39,13 @@ export default function About() {
 
         <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">Interests</h2>
         <p className="text-gray-600 mb-6">
-          When I'm not coding, I enjoy [Your interests here]. I'm always excited to
+          When I&apos;m not coding, I enjoy [Your interests here]. I&apos;m always excited to
           learn new technologies and share my knowledge with the community.
         </p>
 
         <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">Get in Touch</h2>
         <p className="text-gray-600">
-          I'm always open to new opportunities and collaborations. Feel free to reach
+          I&apos;m always open to new opportunities and collaborations. Feel free to reach
           out to me through [Your preferred contact method].
         </p>
       </div>
