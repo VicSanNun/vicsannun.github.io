@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Started with Python Programming</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="../index.html">My Blog</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../resume.html">Resume</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <article class="blog-post">
+            <h1>Getting Started with Python Programming</h1>
+            <div class="meta">
+                <span class="date">March 20, 2024</span>
+                <span class="author">By Your Name</span>
+            </div>
+            <div class="content">
+                <h1>Getting Started with Python Programming</h1>
+<p>Python is a versatile and powerful programming language that's perfect for beginners and experts alike. In this post, we'll explore some fundamental concepts and see why Python is such a popular choice.</p>
+<h2>Why Python?</h2>
+<p>Python's popularity stems from several key features:</p>
+<ul>
+<li>Simple and readable syntax</li>
+<li>Extensive standard library</li>
+<li>Strong community support</li>
+<li>Cross-platform compatibility</li>
+<li>Great for both scripting and large applications</li>
+</ul>
+<h2>Basic Syntax</h2>
+<p>Here's a simple Python function that calculates the factorial of a number:</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">n</span> <span class="o">*</span> <span class="n">factorial</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Example usage</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">factorial</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>  <span class="c1"># Output: 120</span>
+</code></pre></div>
+<h2>Mathematical Operations</h2>
+<p>Python can handle complex mathematical operations. For example, let's look at the quadratic formula:</p>
+<div class="arithmatex">\[
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\]</div>
+<p>Here's how we can implement it in Python:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">math</span>
+
+<span class="k">def</span> <span class="nf">quadratic_formula</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span>
+    <span class="n">discriminant</span> <span class="o">=</span> <span class="n">b</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">4</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">c</span>
+    <span class="k">if</span> <span class="n">discriminant</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">None</span>
+    <span class="n">x1</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="n">b</span> <span class="o">+</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">discriminant</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">a</span><span class="p">)</span>
+    <span class="n">x2</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="n">b</span> <span class="o">-</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">discriminant</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">a</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">x1</span><span class="p">,</span> <span class="n">x2</span>
+</code></pre></div>
+<h2>Data Structures</h2>
+<p>Python provides several built-in data structures:</p>
+<ol>
+<li>Lists: <code>[1, 2, 3, 4, 5]</code></li>
+<li>Tuples: <code>(1, 2, 3)</code></li>
+<li>Dictionaries: <code>{'key': 'value'}</code></li>
+<li>Sets: <code>{1, 2, 3}</code></li>
+</ol>
+<h2>Object-Oriented Programming</h2>
+<p>Python supports object-oriented programming. Here's a simple class example:</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Circle</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">radius</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">radius</span> <span class="o">=</span> <span class="n">radius</span>
+
+    <span class="k">def</span> <span class="nf">area</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">radius</span><span class="o">**</span><span class="mi">2</span>
+
+    <span class="k">def</span> <span class="nf">circumference</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">radius</span>
+</code></pre></div>
+<p>The area of a circle is given by:</p>
+<div class="arithmatex">\[
+A = \pi r^2
+\]</div>
+<p>And the circumference by:</p>
+<div class="arithmatex">\[
+C = 2\pi r
+\]</div>
+<h2>Next Steps</h2>
+<p>To continue your Python journey:</p>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> Install Python from <a href="https://www.python.org">python.org</a></li>
+<li class="task-list-item"><input type="checkbox" disabled/> Set up a development environment</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Learn about virtual environments</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Explore the Python standard library</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Start a small project</li>
+</ul>
+<h2>Conclusion</h2>
+<p>Python is an excellent choice for both beginners and experienced programmers. Its simple syntax, powerful features, and extensive ecosystem make it a versatile tool for various applications.</p>
+<p>Remember: The best way to learn Python is by doing! Start with small projects and gradually increase their complexity as you become more comfortable with the language.</p>
+<p>Happy coding! <img alt="😄" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f604.png" title=":smile:" /></p>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>&copy; 2024 My Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html> 
