@@ -8,6 +8,15 @@ const blogPosts = [
         image: "https://via.placeholder.com/300x200",
         link: "blog/getting-started-with-python.html",
         tags: ["Python", "Programming", "Tutorial"]
+    },
+    {
+        title: "Olá",
+        excerpt: "Learn the basics of Python programming language and its key features.",
+        date: "March 20, 2024",
+        author: "Victor Nunes",
+        image: "https://via.placeholder.com/300x200",
+        link: "blog/teste.html",
+        tags: ["Python", "Programming", "Tutorial"]
     }
     // Add more posts here as you create them
 ];
@@ -18,7 +27,6 @@ function createBlogPostCard(post) {
     
     return `
         <div class="card">
-            <img src="${post.image}" alt="${post.title}">
             <div class="card-content">
                 <h3>${post.title}</h3>
                 <div class="meta">

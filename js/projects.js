@@ -22,7 +22,6 @@ function createProjectCard(project) {
     
     return `
         <div class="card">
-            <img src="${project.image}" alt="${project.title}">
             <div class="card-content">
                 <h3>${project.title}</h3>
                 <p>${project.description}</p>

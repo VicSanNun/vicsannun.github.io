@@ -67,7 +67,6 @@ const featuredProjects = [
 function createPostCard(post) {
     return `
         <div class="card">
-            <img src="${post.image}" alt="${post.title}">
             <div class="card-content">
                 <h3>${post.title}</h3>
                 <p>${post.excerpt}</p>
@@ -86,7 +85,6 @@ function createProjectCard(project) {
 
     return `
         <div class="card">
-            <img src="${project.image}" alt="${project.title}">
             <div class="card-content">
                 <h3>${project.title}</h3>
                 <p>${project.description}</p>
