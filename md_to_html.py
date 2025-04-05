@@ -2,6 +2,7 @@ import markdown
 import sys
 import os
 import re
+import json
 from pathlib import Path
 import yaml
 from datetime import datetime
@@ -18,6 +19,56 @@ def extract_metadata(md_content):
             except yaml.YAMLError:
                 print("Warning: Invalid YAML metadata")
     return metadata, md_content
+
+def update_blog_js(metadata, md_file_path):
+    """Update the blogPosts array in blog.js with the new post."""
+    blog_js_path = 'js/blog.js'
+    
+    # Read the current blog.js content
+    with open(blog_js_path, 'r', encoding='utf-8') as f:
+        content = f.read()
+    
+    # Extract the current blogPosts array
+    match = re.search(r'const blogPosts = \[(.*?)\];', content, re.DOTALL)
+    if not match:
+        print("Warning: Could not find blogPosts array in blog.js")
+        return
+    
+    current_posts = match.group(1)
+    
+    # Create the new post object
+    new_post = {
+        'title': metadata.get('title', Path(md_file_path).stem),
+        'excerpt': metadata.get('excerpt', ''),
+        'date': metadata.get('date', datetime.now().strftime('%B %d, %Y')),
+        'author': metadata.get('author', 'Your Name'),
+        'image': metadata.get('image', 'https://via.placeholder.com/300x200'),
+        'link': f'blog/{Path(md_file_path).stem}.html',
+        'tags': metadata.get('tags', [])
+    }
+    
+    # Convert the new post to a string
+    new_post_str = json.dumps(new_post, indent=4)
+    
+    # Update the blogPosts array
+    if current_posts.strip():
+        # If there are existing posts, add a comma and the new post
+        updated_posts = f"{current_posts.rstrip()},\n    {new_post_str}"
+    else:
+        # If there are no existing posts, just add the new post
+        updated_posts = f"    {new_post_str}"
+    
+    # Replace the old array with the updated one
+    new_content = content.replace(
+        f'const blogPosts = [{current_posts}];',
+        f'const blogPosts = [\n{updated_posts}\n];'
+    )
+    
+    # Write the updated content back to blog.js
+    with open(blog_js_path, 'w', encoding='utf-8') as f:
+        f.write(new_content)
+    
+    print(f"Successfully updated blog.js with new post: {new_post['title']}")
 
 def convert_md_to_html(md_file_path, output_dir=None, template_path=None):
     """
@@ -128,6 +179,9 @@ def convert_md_to_html(md_file_path, output_dir=None, template_path=None):
         f.write(html_template)
     
     print(f"Successfully converted {md_file_path} to {output_path}")
+    
+    # Update blog.js with the new post
+    update_blog_js(metadata, md_file_path)
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
