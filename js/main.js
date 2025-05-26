@@ -51,7 +51,7 @@ const featuredProjects = [
         title: "Personal Blog",
         description: "A responsive blog built with HTML, CSS, and JavaScript",
         image: "https://via.placeholder.com/300x200",
-        link: "projects/personal-blog.html",
+        link: "projects/personal-index.html",
         tech: ["HTML", "CSS", "JavaScript"]
     },
     {

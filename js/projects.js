@@ -4,7 +4,7 @@ const projects = [
         title: "Personal Blog",
         description: "A responsive blog built with HTML, CSS, and JavaScript. Features include Markdown support, LaTeX math expressions, and a clean, modern design.",
         image: "https://via.placeholder.com/300x200",
-        link: "projects/personal-blog.html",
+        link: "projects/personal-index.html",
         tech: ["HTML", "CSS", "JavaScript", "Python", "Markdown"]
     },
     {

@@ -59,7 +59,7 @@ Your content here...
 
 ```bash
 # Convert a single post
-python md_to_html.py src/posts/tech/your-post.md public/blog
+python md_to_html.py src/posts/tech/your-post.md public/blog templates/blog_post.html
 
 # Convert all posts
 python md_to_html.py --all src/posts public/blog
