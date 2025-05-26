@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Victor Nunes</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Victor Nunes</title>
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
-                <a href="index.html">Victor Nunes</a>
+                <a href="_index.html">Victor Nunes</a>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="resume.html">Resume</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="blog.html">Blog</a></li>
+                <li><a href="../index.html">Blog</a></li>
                 <li><a href="projects.html">Projects</a></li>
             </ul>
             <div class="burger">
@@ -29,13 +29,23 @@
     </header>
 
     <main>
-        <section class="projects-header">
-            <h1>My Projects</h1>
-            <p>Here are some of the projects I've worked on</p>
+        <section class="hero">
+            <h1>Welcome to My Blog</h1>
+            <p>A place where I share my thoughts, projects, and experiences</p>
         </section>
 
-        <section class="projects-grid" id="projects-container">
-            <!-- Projects will be loaded here -->
+        <section class="recent-posts">
+            <h2>Recent Posts</h2>
+            <div class="posts-grid" id="recent-posts-container">
+                <!-- Posts will be loaded dynamically -->
+            </div>
+        </section>
+        <br/>
+        <section class="featured-projects">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid" id="featured-projects-container">
+                <!-- Projects will be loaded dynamically -->
+            </div>
         </section>
     </main>
 
@@ -50,6 +60,6 @@
         </div>
     </footer>
 
-    <script src="js/projects.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html> 
